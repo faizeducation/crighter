@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kevalpatel2106:hiddencamera:1.3.3@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/312862cdbebc659b09cdd3806c1d596a/transformed/jetified-hiddencamera-1.3.3/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/24f038dbd4357522414ffc9aeada5f35/transformed/jetified-hiddencamera-1.3.3/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/312862cdbebc659b09cdd3806c1d596a/transformed/jetified-hiddencamera-1.3.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/312862cdbebc659b09cdd3806c1d596a/transformed/jetified-hiddencamera-1.3.3/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/24f038dbd4357522414ffc9aeada5f35/transformed/jetified-hiddencamera-1.3.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/24f038dbd4357522414ffc9aeada5f35/transformed/jetified-hiddencamera-1.3.3/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/24f038dbd4357522414ffc9aeada5f35/transformed/jetified-hiddencamera-1.3.3/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kevalpatel2106/hiddencamera/1.3.3/d15e6c62829c20ccbf5818ba7831f428aaa95fc0/hiddencamera-1.3.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

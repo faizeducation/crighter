@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_back">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/shaded_background_white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_registration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="55dp"
+                            android:text="Update Profile"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="26sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <EditText
+                                android:id="@+id/et_user_fullname"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="5dp"
+                                android:backgroundTint="@color/grey"
+                                android:hint="Your Full Name"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorBlue"
+                                android:textColorHint="@color/colorBlue"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_email_not_verified"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Email not verified Click Here to verify"
+                                android:textColor="@color/colorRed" />
+
+                            <EditText
+                                android:id="@+id/et_user_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:backgroundTint="@color/grey"
+                                android:hint="Your Email"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorBlue"
+                                android:textColorHint="@color/colorBlue"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/et_user_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:backgroundTint="@color/grey"
+                                android:hint="Personal Phone Number"
+                                android:inputType="phone"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorBlue"
+                                android:textColorHint="@color/colorBlue"
+                                android:textSize="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Your Gender"
+                                    android:textColor="@color/grey"
+                                    android:textSize="18sp" />
+
+                                <RadioGroup
+                                    android:id="@+id/user_rg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/colorBlue"
+                                        android:text="Male"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/colorBlue"
+                                        android:text="Female"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/colorBlue"
+                                        android:text="Other"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="14sp" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/et_auth_fullname"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:backgroundTint="@color/grey"
+                                android:hint="Authority Full Name"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorBlue"
+                                android:textColorHint="@color/colorBlue"
+                                android:textSize="15sp" />
+
+
+                            <EditText
+                                android:id="@+id/et_auth_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:backgroundTint="@color/grey"
+                                android:hint="Authority Email"
+                                android:inputType="textEmailAddress"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorBlue"
+                                android:textColorHint="@color/colorBlue"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/et_auth_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:backgroundTint="@color/grey"
+                                android:hint="Authority Phone Number"
+                                android:inputType="phone"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/colorBlue"
+                                android:textColorHint="@color/colorBlue"
+                                android:textSize="15sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_aut_gender"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="Authority Gender"
+                                    android:textColor="@color/grey"
+                                    android:textSize="18sp" />
+
+                                <RadioGroup
+                                    android:id="@+id/rg_auth"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/colorBlue"
+                                        android:text="Male"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/colorBlue"
+                                        android:text="Female"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:buttonTint="@color/colorBlue"
+                                        android:text="Other"
+                                        android:textColor="@color/colorBlue"
+                                        android:textSize="14sp" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/spiner_background">
+
+                                <Spinner
+                                    android:id="@+id/sp_relation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:backgroundTint="@color/colorBlue"
+                                    android:entries="@array/select_relation"
+                                    android:inputType="text"
+                                    android:paddingLeft="10dp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/bt_register"
+                                android:layout_width="130dp"
+                                android:layout_height="40dp"
+
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="20dp"
+                                android:background="@drawable/button_ripple">
+
+                                <TextView
+                                    android:id="@+id/tv_update"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="Update"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/logo" />
+                </RelativeLayout>
+            </ScrollView>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:layout_width="60dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_back_icon"
+            tools:ignore="VectorDrawableCompat" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/et_background"
+    android:layout_marginTop="20dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text="10-Oct-2018 02:01 PM"
+            android:textColor="@color/colorBlueTrans"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+            android:id="@+id/iv_main_image"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:srcCompat="@drawable/logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cure_box_listing"
+            android:gravity="center">
+           <RelativeLayout
+               android:id="@+id/rl_images"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="5dp">
+               <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="30dp"
+                   android:layout_centerInParent="true"
+                   app:srcCompat="@drawable/history_gallery128"/>
+           </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:id="@+id/iv_audio"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:tint="@color/colorBlack"
+                    app:srcCompat="@android:drawable/ic_btn_speak_now"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:padding="2dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/history_location128"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

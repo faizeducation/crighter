@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">CRIGHTER</string>
+    <string name="api_key">AIzaSyBceTlat_Q7_99-Kvk9w3dGNczUV-TGQr8</string>
+    <string name="api_key_youtube">AIzaSyBfOakoxzF7ZLEmEsUofN9rXguHx5YtiGI</string>
+    <string name="error_cannot_write">Cannot write image captured by camera.</string>
+    <string name="error_cannot_open">Cannot open camera.</string>
+    <string name="error_cannot_get_permission">Camera permission not available.</string>
+    <string name="error_not_having_camera">Your device does not have front camera.</string>
+    <string name="error_camera_permission_denied">Camera permission denied.</string>
+    <string name="btn_tittle_capture_image">Capture image</string>
+
+    <string-array name="select_relation">
+        <item>Select Your Relation</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Grand Father</item>
+        <item>Grand Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+        <item>Uncle</item>
+        <item>Friend</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="startpecefullift">Start a Peacefull Life With</string>
+    <string name="descriptiontext">The Crighter Company is the largest, most impressive, creative and forward-thinking Veterinary service provider company in Pakistan. At the core of your business philosophy is a commitment to extraordinary service, honesty, and clear communication.
+In brief. You will feel the difference as soon as you walk into our offices, speak with us on the telephone, or meet us in person. Our experienced broker agents, qualified agents, and a lot of the time support staff are friendly, knowledgeable, and very hard-working. All of us incorporate the best in good old-fashioned customer support with the most recent and best in technology and web-affiliated marketing.</string>
+
+    <string name="ourmission">OUR MISSION</string>
+    <string name="ouragents">OUR AGENTS</string>
+    <string name="ourmissiondescrption">Our mission is to provide the highest level of service to our clients to help them on demand.</string>
+    <string name="ouragentdescription">Our Agents are all long time Whistler locals and are experts in both the area and the treatment market.</string>
+    <string name="ourvision">OUR VISION</string>
+    <string name="ourvisiondescription">Crighter is a regional, providing full-service quality. Crighter will find you the best veterinary nearby you.</string>
+    <string name="value">VALUES</string>
+    <string name="valuedescription">We always do what is right, and ethical. We share appropriate information in an honest. We are positive and enthusiastic.</string>
+
+
+    <string name="description_text_for_contact_us">We Collect the minimum amount of information about you that is commensurate with providing you satification services. This policy indicate the type of processes that may result in data being collected about you. Your use of this app give us the right to collect the information</string>
+
+
+    <string name="label_google_sign_in">Firebase + Google Sign In</string>
+    <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>
+
+    <string name="label_facebook_login">Firebase + Facebook Login</string>
+    <string name="desc_facebook_login">Use a Facebook Login credential to authenticate with Firebase.</string>
+
+    <string name="label_twitter_login">Firebase + Twitter Login</string>
+    <string name="desc_twitter_login">Use a Twitter Login credential to authenticate with Firebase.</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="label_passwordless">Passwordless Authentication</string>
+    <string name="desc_passwordless">Use only an email to authenticate with Firebase.</string>
+
+    <string name="label_phone_auth">Phone Number Authentication</string>
+    <string name="desc_phone_auth">Use a phone number to authenticate with Firebase.</string>
+
+    <string name="label_anonymous_auth">Anonymous Authentication</string>
+    <string name="desc_anonymous_auth">Sign in anonymously and then later upgrade to a full Firebase Auth user.</string>
+
+    <string name="label_custom_auth">Custom Authentication</string>
+    <string name="desc_custom_auth">Use a custom token signed by your own server to authenticate with Firebase.</string>
+
+    <string name="label_firebase_ui">FirebaseUI Auth</string>
+    <string name="desc_firebase_ui">Use the FirebaseUI-Android library to authenticate with Firebase.</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_account">Create Account</string>
+    <string name="send_link">Send Link</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+
+    <string name="facebook_status_fmt">Facebook User: %s</string>
+    <string name="facebook_title_text">Facebook Login</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="passwordless_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="passwordless_title_text">Passwordless Sign In</string>
+    <string name="status_email_not_sent">Send link to your email to get started.</string>
+    <string name="status_email_sent">Link sent, check your email to continue.</string>
+    <string name="status_link_found">Link received, enter email to sign in.</string>
+
+    <string name="phone_title_text">Phone Number</string>
+
+    <string name="twitter_status_fmt">Twitter User: %s</string>
+    <string name="twitter_title_text">Twitter Login</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="howitworks"><u>How It Works?</u></string>
+
+    <string name="what_is_righter">What is Crighter?</string>
+    <string name="what_crighter_ans">Crighter is an app created to save yours and other life. We want everyone to be safe in this cruel world from crimes like robbery, murder, rape, etc. Crighter captures continuous pictures for 5 seconds, along with location, audio, date and time. It also contains the security map, that shows which area is most Safe, Normal or Dangerous. You just need to Enter the location and you will know all about it. We are hoping the future to be safe and protected. Crighter is a sleeping cell which can change this world forever. No matter you are using your device or its in the sleep mode, Crighter always works because <b> WE PROTECT YOU.</b>.</string>
+    <string name="how_it_works">How it works?</string>
+    <string name="how_it_work_ans">
+        1. Signup and Enter your details and authority details. (trustworthy)
+        \n2. Verify your personal phone number.
+        \n3. Login to your account.
+        \n4. Click the Start button to activate Crighter.
+        \n5. When you feel you are in danger, press the power button thrice, then all of your captured information will be mailed, saved and texted on both authority and personal details.
+    </string>
+
+
+    <string name="note">Note</string>
+
+    <string name="note_text">
+        &#8226; If you want to stop Crighter, open the app and click the stop button. We advice you to not stop or uninstall the app, because you never know when you will need it.
+        \n&#8226; Keep in mind that Crighter doesn\'t drain your battery...
+        \n&#8226; Crighter is totally ad free.
+        </string>
+
+
+    <string name="facebook_app_id">338842340002147</string>
+
+    <string name="location_permission_title">Location Permission</string>
+    <string name="why_location_permission_require_details">LOCATION ACCESS: CRIGHTER collects location data to enable location tracking so you it can send SOS alerts and location anytime incase of any emergency even when the app is closed or not in use.</string>
+
+    <string name="sms_permission_description">
+        Crighter need sms permission to send sms from your device to the authorised person , sms  is core functionality of the crighter, in the sense if your decleared some authorized person so this app sends your danger location and details at the time of event trigger through sms and this app uses sms permission only when a user wants to.</string>
+
+
+    <string name="first_aid">
+       \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>First Aid Guide</b>\n\n
+\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>BLEEDING</b>\n\n\n
+Before providing care, put on protective gloves or use a barrier between you and the victim, to reduce the chance of disease transmission while assisting the injured person. Cleanse your hands thoroughly with soap and water when finished.\n
+Basic first aid treatment:\n
+•	CALL Hospital for medical assistance.\n
+•	Keep victim lying down.\n
+•	Apply direct pressure using a clean cloth or sterile dressing directly on the wound.\n
+•	DO NOT take out any object that is lodged in a wound; see a doctor for help in removal.\n
+•	If there are no signs of a fracture in the injured area, carefully elevate the wound above the victim\'s heart.\n
+•	Once bleeding is controlled, keep victim warm by covering with a blanket, continuing to monitor for shock.\n
+        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>CLEANING &amp; BANDAGING WOUNDS</b>\n\n\n
+•	Wash your hands and cleanse the injured area with clean soap and water, then blot dry.\n
+•	Apply antibiotic ointment to minor wound and cover with a sterile gauze dressing or bandage that is slightly larger than the actual wound.\n
+        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\<b>EYE INJURIES</b>\n\n\n
+•	If an object is impaled in the eye, CALL Hospital and DO NOT remove the object.\n
+•	Cover both eyes with sterile dressings or eye cups to immobilize.\n
+•	Covering both eyes will minimize the movement of the injured eye.\n
+•	DO NOT rub or apply pressure, ice, or raw meat to the injured eye.\n
+•	If the injury is a black eye, you may apply ice to cheek and area around eye, but not directly on the eyeball itself.\n
+How to flush the eyes: If chemical is in only one eye, flush by positioning the victim\'s head with the contaminated eye down. . . to prevent flushing the chemical from one eye to another. Flush with cool or room temperature water for 15 minutes or more. Remove contact lenses after flushing.\n
+        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\<b>BURNS</b>\n\n\n
+First Degree Burn: Skin will appear red and may be swollen or painful. Generally does not require medical attention.\n
+Second Degree Burn: Skin will appear red, blistered and swollen. May require medical attention.\n
+Third Degree Burn: Skin will be visibly charred and may be white. Usually very painful. REQUIRES MEDICAL ATTENTION.\n
+Basic first aid treatment for 1st degree &amp; some 2nd degree burns:\n
+Submerge burn area immediately in cool water until pain stops. If affected area is large, cover with cool wet cloths. Do not break blisters if they are present. If pain persists but no medical assistance is needed, apply medicated first aid cream or gel and cover with sterile dressing. If medical attention is needed, do not apply any cream. Just cover with a dry, sterile dressing and seek medical help immediately. basic first aid treatment for 3rd degree &amp; some 2nd degree burns: CALL Hospital !! Third degree burns MUST RECEIVE MEDICAL ATTENTION IMMEDIATELY! DO NOT try to remove any clothing stuck to the burned area. Cover with sterile dressing or clean sheet. DO NOT apply any creams or gels.\n\n\n
+        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\<b>CHEMICAL BURNS</b>\n\n\n
+•	Flush the affected area with cool running water for at least 15 minutes.\n
+•	Remove all clothing and jewelry that has been contaminated.\n
+•	Monitor victim for shock and seek medical assistance.\n
+•	If chemical burn is in the eyes, flush continuously with water and seek medical attention immediately.\n
+SUNBURN\n
+•	Avoid any further exposure to direct sunlight.\n
+•	Drink plenty of water to prevent dehydration.\n
+•	Do not apply cold water or ice to a severe burn.\n
+•	Use over-the-counter remedies to remove discomfort.\n
+•	If burn is severe and blisters develop, seek medical attention.\n
+UNCONSCIOUSNESS\n
+•	Do not leave an unconscious victim alone except to call Hospital for medical help.\n
+•	Assess victim’s state of awareness by asking if they are OK.\n
+•	Check the victim’s Airway, Breathing, and Circulation (ABC’s).\n
+•	If the victim’s ABC’s are not present, perform CPR. IMPORTANT: only a trained &amp; qualified person should administer CPR.\n
+•	If ABC’s are present and spinal injury is not suspected, place victim on their side with their chin toward the ground to allow for secretion drainage.\n
+•	Cover the victim with blanket to keep warm and prevent shock. If victim communicates feeling warm, remove blanket.\n
+CHOKING\n
+•	Ask the victim, "Are you OK?"\n
+•	do not interfere or give first aid if the victim can speak, breathe, or cough.\n
+•	If the victim cannot speak, breathe, or cough, ask for someone to call Hospital and then perform the Heimlich maneuver (abdominal thrust).\n
+•	How to perform the Heimlich maneuver: Position yourself behind the victim with your arms around victim’s stomach. Place the thumb-side of your fist above the victim’s navel and below the lower end of the breastbone. Take hold of your fist with your free hand and pull fist upward and in, quickly and firmly. Continue with thrusts until the object is dislodged or airway is clear.\n
+INFANT CHOKING\n
+•	Place infant face down on your forearm supporting the head and neck with your hand. Rest your hand on your knee with the infant’s head lower than it’s body.\n
+•	With the heel of your hand give four blows between the infant’s shoulder blades.\n
+•	Turn infant over, place two fingers on the center of the infant’s chest (just below the nipples) and perform up to five chest thrusts.\n
+•	Repeat until obstruction is clear.\n
+•	seek medical attention after any choking incident, since complications may arise.\n
+POISON\n
+•	Call your local Poison Control Center for immediate medical attention.\n
+•	Antidotes on labels may be wrong!! do not follow them unless instructed by a physician.\n
+•	never give anything by mouth (milk, water, Ipecac, etc.) until you have consulted with a medical professional.\n
+•	Keep a one ounce bottle of Ipecac on hand at all times in case of an emergency, and give only when instructed by a physician.\n
+•	If the poison is on the skin, flush skin with water for 15 minutes, then wash and rinse with soap and water.\n
+•	If poison is in the eye, flush with lukewarm water for 15 minutes. Adults can stand under the shower with eyes open. always consult medical professionals after any eye injury has occurred.\n
+ANIMAL BITES\n
+•	Control any bleeding by applying direct pressure or with elevation.To avoid risk of infection, do not close wound.\n
+•	Rinse the bite thoroughly, holding it under running water. Cleanse with soap and water and hold under water again for five minutes.\n
+•	do not put ointments or medicines on wound. Cover with dry sterile bandage or gauze.\n
+•	seek medical assistance immediately.\n
+•	note: report animal and human bites to local police and/or health authorities.\n
+BEE STING\n
+•	If possible, remove stinger by scraping it off with a blunt edge (e.g. credit card).\n
+•	Clean wound and apply cold compress to reduce swelling.\n
+•	Remove tight clothing and jewelry from areas near the bite in case swelling occurs.\n
+•	Watch for signs of shock or allergic reaction. Signs include swelling or itching at the wound site, dizziness, nausea or difficulty breathing. Seek medical attention immediately if any of these signs occur.\n
+•	Continue monitoring victim for shock until medical help arrives.\n
+•	Check victim’s Airway, Breathing, and Circulation (ABC’s). If ABC’s are impaired then call 911 and begin CPR. IMPORTANT: only a trained &amp; qualified person should administer CPR.\n
+
+
+    </string>
+</resources>

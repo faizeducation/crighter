@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/verification_screen_bg"
+    android:orientation="vertical">
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/tv_title_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:background="@drawable/verification_title_bar">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_title_text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--           android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="VERIFICATION"-->
+<!--            android:textColor="@color/colorWhite"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_below="@+id/tv_title_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_tag1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Enter The Code"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_tag2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="22sp"-->
+<!--            android:text="we have sent on your personal phone number"-->
+<!--            android:gravity="center"-->
+<!--            android:textAlignment="center"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginRight="5dp"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginRight="6dp"-->
+<!--                android:background="@drawable/verification_box">-->
+
+<!--                <EditText-->
+<!--                    android:background="@null"-->
+<!--                    android:id="@+id/digist1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:maxLength="1"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="22sp" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:background="@drawable/verification_box">-->
+
+<!--                <EditText-->
+<!--                    android:background="@null"-->
+<!--                    android:id="@+id/digist2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:maxLength="1"/>-->
+<!--            </RelativeLayout>-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginRight="6dp"-->
+<!--                android:background="@drawable/verification_box">-->
+
+<!--                <EditText-->
+<!--                    android:background="@null"-->
+<!--                    android:id="@+id/digist3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:maxLength="1"/>-->
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginRight="6dp"-->
+<!--                android:background="@drawable/verification_box">-->
+<!--                <EditText-->
+<!--                    android:background="@null"-->
+<!--                    android:id="@+id/digist4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:maxLength="1"/>-->
+
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/verification_box">-->
+<!--                <EditText-->
+<!--                    android:background="@null"-->
+<!--                    android:id="@+id/digist5"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:maxLength="1"/>-->
+<!--            </RelativeLayout>-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginLeft="6dp"-->
+<!--                android:background="@drawable/verification_box">-->
+<!--                <EditText-->
+<!--                    android:background="@null"-->
+<!--                    android:id="@+id/digist6"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="22sp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:maxLength="1"/>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_timer"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorWhite"-->
+<!--            android:text="00"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_gravity="center"/>-->
+<!--        -->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="36dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            android:layout_marginTop="40dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/buttonVerifyPhone"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/button_ripple">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_verify"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="Verify"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--            </RelativeLayout>-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/buttonResend"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:background="@drawable/button_ripple">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_resent"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:text="Resend"-->
+<!--                    android:textColor="@color/colorWhite"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold"/>-->
+<!--            </RelativeLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_timeer_circle"-->
+<!--            android:layout_width="240dp"-->
+<!--            android:layout_height="240dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginBottom="166dp"-->
+<!--            android:layout_marginEnd="213dp"-->
+<!--            android:layout_marginRight="213dp"-->
+<!--            android:background="@drawable/circle_background"-->
+<!--            android:visibility="gone">-->
+
+<!--            <com.crighter.Utilities.CircularSeekBar-->
+<!--                android:id="@+id/circularSeekBar1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="75dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

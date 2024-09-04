@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/verification_screen_bg">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_back_icon"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarThumbVertical="@drawable/scrollview_thumb"
+        android:layout_marginTop="55dp"
+        android:scrollbarTrackVertical="@drawable/vertical_scrollview_traack">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_app_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/ll_logo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:id="@+id/iv_logo"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/dashbaord_logo"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_toRightOf="@+id/iv_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Crighter"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/normal_text_font"
+                        android:textSize="22sp"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_below="@+id/ll_logo_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_history"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/menu_help"/>
+
+                    <TextView
+                        android:id="@+id/tv_version"
+                        android:layout_toRightOf="@+id/iv_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Version"
+                        android:fontFamily="@font/normal_text_font"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/tv_version"
+                        android:layout_toRightOf="@+id/iv_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="1.0.0"
+                        android:fontFamily="@font/normal_text_font"
+                        android:textColor="#eb1a1919"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ll_author"
+                android:layout_below="@+id/rl_app_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_background"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/normal_text_font"
+                    android:layout_marginTop="10dp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_compnay"
+                    android:layout_below="@+id/tv_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_company"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:tint="@color/colorBlack"
+                        app:srcCompat="@drawable/company"/>
+
+                    <TextView
+                        android:id="@+id/tv_company"
+                        android:layout_toRightOf="@+id/iv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Company"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/normal_text_font"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/tv_company"
+                        android:layout_toRightOf="@+id/iv_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Crighter"
+                        android:fontFamily="@font/normal_text_font"
+                        android:textColor="#eb1a1919"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_email"
+                    android:layout_below="@+id/rl_compnay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_email"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:tint="@color/colorBlack"
+                        app:srcCompat="@drawable/email"/>
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_toRightOf="@+id/iv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/normal_text_font"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/tv_email"
+                        android:layout_toRightOf="@+id/iv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="contact@crighter.com"
+                        android:textColor="#eb1a1919"
+                        android:fontFamily="@font/normal_text_font"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_website"
+                    android:layout_below="@+id/rl_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_website"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:tint="@color/colorBlack"
+                        android:backgroundTint="@color/colorBlue"
+                        app:srcCompat="@drawable/website"/>
+
+                    <TextView
+                        android:id="@+id/tv_website"
+                        android:layout_toRightOf="@+id/iv_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Website"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/normal_text_font"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/tv_website"
+                        android:layout_toRightOf="@+id/iv_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="www.crighter.com"
+                        android:textColor="#eb1a1919"
+                        android:fontFamily="@font/normal_text_font"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_phone"
+                    android:layout_below="@+id/rl_website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_phone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:srcCompat="@drawable/menu_contact_us"/>
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_toRightOf="@+id/iv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/normal_text_font"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_below="@+id/tv_phone"
+                        android:layout_toRightOf="@+id/iv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="+92123456789"
+                        android:fontFamily="@font/normal_text_font"
+                        android:textColor="#eb1a1919"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@id/ll_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/et_background">
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/normal_text_font"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_below="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/normal_text_font"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/description_text_for_contact_us"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

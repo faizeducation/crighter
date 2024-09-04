@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        card_view:cardCornerRadius="4dp"
+        android:visibility="gone">
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            tools:layout="@layout/search_bar_layout"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/search_bar_header"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/rounded_corners_edittext"
+        android:visibility="gone">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="30dp"
+            android:layout_centerInParent="true"
+            android:hint="Search"
+            android:textColor="@color/grey"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/places_ic_search"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirm_address_map_custom_marker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="130dp">
+
+        <include android:id="@+id/center_pin_layout"
+            layout="@layout/pin"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/markerDetailRL"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner_relativelayout"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/markerImg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/rounded_corner_relativelayout"/>
+        <TextView
+            android:id="@+id/markerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text=""
+            android:layout_above="@+id/guestsTag"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/guestsTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guests: "
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/markerGuests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/guestsTag"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rent: $"
+            android:textColor="@color/colorWhite"
+            android:layout_toLeftOf="@+id/markerPrice"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/markerPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:tint="@color/colorBlue"
+        android:src="@drawable/back_icon_map"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

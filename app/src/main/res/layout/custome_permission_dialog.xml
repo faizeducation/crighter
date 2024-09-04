@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/ic_verficatio_popup_box"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color_pure_red"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:text="SMS Permission And Location Permission"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"/>
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:text="Please Enter Email Or Mobile Number You Register With"
+            android:textStyle="bold"
+            android:fontFamily="@font/century_gothic"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rl_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/ripple_white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Deny"
+                    android:fontFamily="@font/century_gothic"
+                    android:textColor="@color/colorBlack"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/bt_submit_for_forgot_pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_ripple">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_signup_icon"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Allow"
+                    android:fontFamily="@font/century_gothic"
+                    android:textColor="@color/colorWhite"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

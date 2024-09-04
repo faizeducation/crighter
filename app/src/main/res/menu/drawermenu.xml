@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/my_id">
+
+        <item
+            android:title="Home"
+            android:icon="@drawable/menu_home"
+            android:id="@+id/nave_item_dashboard" />
+
+        <item
+            android:title="Username"
+            android:icon="@drawable/menu_person"
+            android:id="@+id/username"
+            app:actionLayout="@layout/menu_item_layout"/>
+
+<!--        <item
+            android:title="Help"
+            android:icon="@drawable/menu_help"
+            android:id="@+id/nav_item_about"/>-->
+        <item
+            android:title="Danger Zone"
+            android:icon="@drawable/menu_location"
+            android:id="@+id/nave_danger_zone"/>
+
+        <item
+            android:title="Contact Us"
+            android:icon="@drawable/menu_contact_us"
+            android:id="@+id/nav_item_contact_us"/>
+
+        <item
+            android:title="History"
+            android:icon="@drawable/menu_history"
+
+            android:id="@+id/aboutus"/>
+
+    </group>
+
+
+</menu>
